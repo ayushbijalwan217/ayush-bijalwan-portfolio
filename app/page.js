@@ -527,7 +527,7 @@ function ProjectCard({ p, onOpen, idx }) {
   const reset = () => setMouse({ x: 0, y: 0 })
   return (
     <TextReveal delay={idx * 0.04}>
-      <motion.div ref={ref} onMouseMove={onMove} onMouseLeave={reset} data-hover
+      <motion.div ref={ref} onMouseMove={onMove} onMouseLeave={reset} onClick={() => onOpen(p)} data-hover
         style={{ transform: `perspective(1000px) rotateY(${mouse.x}deg) rotateX(${-mouse.y}deg)` }}
         className="group relative rounded-3xl overflow-hidden cursor-pointer glass transition-transform duration-300">
         <div className="relative aspect-[4/3] overflow-hidden">

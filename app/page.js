@@ -653,13 +653,27 @@ function ProjectModal({ project, onClose }) {
             {project.software.map((s, i) => <span key={i} className="px-4 py-2 rounded-full glass text-sm">{s}</span>)}
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {[project.img, project.img, project.img].map((im, i) => (
-            <div key={i} className="aspect-video rounded-xl overflow-hidden">
-              <img src={im} alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+  {(project.videos || []).map((video, i) => (
+    <div
+      key={i}
+      onClick={() => setSelectedVideo(video)}
+      className={`cursor-pointer rounded-xl overflow-hidden border-2 transition-all ${
+        selectedVideo === video
+          ? "border-[#00D9FF]"
+          : "border-transparent hover:border-white/30"
+      }`}
+    >
+      <video
+        src={video}
+        muted
+        playsInline
+        preload="metadata"
+        className="w-full aspect-[9/16] object-cover"
+      />
+    </div>
+  ))}
+</div>
       </motion.div>
     </motion.div>
   )

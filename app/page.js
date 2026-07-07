@@ -271,10 +271,10 @@ const BehanceIcon = ({ className = '' }) => (
 
 function SocialIcons() {
   const list = [
-    { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { Icon: Instagram, href: '#', label: 'Instagram' },
-    { Icon: BehanceIcon, href: '#', label: 'Behance' },
-    { Icon: Mail, href: '#contact', label: 'Email' },
+    { Icon: Linkedin, href: 'https://www.linkedin.com/feed/', label: 'LinkedIn' },
+    { Icon: Instagram, href: 'https://www.instagram.com/ayushh.217?igsh=MW54cTZ0djQyYXhiNA%3D%3D&utm_source=qr', label: 'Instagram' },
+    { Icon: BehanceIcon, href: 'https://www.behance.net/ayushbijalwan4', label: 'Behance' },
+    { Icon: Mail, href: 'mailto:ayushbijalwan217@gmail.com', label: 'Email' },
   ]
   return (
     <div className="flex flex-row gap-3">

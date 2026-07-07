@@ -611,14 +611,15 @@ function ProjectModal({ project, onClose }) {
           </button>
         </div>
         <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-8">{project.title}</h2>
-        <div className="relative aspect-video rounded-2xl overflow-hidden mb-10 group">
-          <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <div className="w-20 h-20 rounded-full bg-[#00D9FF] flex items-center justify-center pulse-glow">
-              <Play className="w-7 h-7 text-black fill-black ml-1" />
-            </div>
-          </div>
-        </div>
+        <div className="relative aspect-video rounded-2xl overflow-hidden mb-10">
+          <video
+          src={project.video}
+          controls
+          autoPlay
+          playsInline
+          className="w-full h-full object-cover"
+        />
+      </div>
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           {[{ l: 'Client', v: project.client }, { l: 'Role', v: project.role }, { l: 'Duration', v: project.duration }].map((x, i) => (
             <div key={i} className="glass rounded-2xl p-5">

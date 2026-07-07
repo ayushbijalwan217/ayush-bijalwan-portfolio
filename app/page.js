@@ -35,14 +35,15 @@ const SKILLS = [
 
 const SERVICES = []
 
-const PROJECTS = [
-  { title: 'Cinematic Travel Edit', category: 'Video Editing', software: ['Premiere Pro', 'After Effects', 'Photoshop'], desc: 'A soul-stirring travel edit crafted in the Himalayas with cinematic pacing and grade.', role: 'Editor / Colorist', client: 'Personal', duration: '3 weeks', workflow: 'Ingest -> Assembly -> Rough Cut -> Sound Design -> Color -> Delivery', img: 'https://images.unsplash.com/photo-1627637819794-fba32f82be16?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '9/16', video: '/videos/cinematic-travel-edit.mp4' },
-  { title: 'Gaming Montage', category: 'Video Editing', software: ['After Effects', 'Premiere Pro'], desc: 'High-energy gaming montage with kinetic transitions and glitch effects.', role: 'Editor', client: 'Esports Team', duration: '2 weeks', workflow: 'Concept -> Sync -> FX -> Grade -> Sound -> Master', img: 'https://images.unsplash.com/photo-1601315488950-3b5047998b38?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', video: '/videos/montage-last-final-3.mp4', aspect: '16/9' },
-  { title: 'Cinematic Intro Edit', category: 'Video Editing', software: ['After Effects', 'Premiere Pro'], desc: 'Signature intro sequence with kinetic type, seamless transitions and sound design.', role: 'Editor', client: 'Creator', duration: '1 week', workflow: 'Style Frames -> Edit -> Sound -> Master', img: 'https://images.unsplash.com/photo-1678986718987-76f0b9357e0f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '16/9', video: '/videos/Cinematic-Intro-Edit.mp4' },
-  { title: 'Product Advertisement', category: 'Video Editing', software: ['Premiere Pro', 'After Effects'], desc: 'Cinematic product spot with studio-grade color, macro detail and punchy sound.', role: 'Editor', client: 'D2C Brand', duration: '3 weeks', workflow: 'Assembly -> Edit -> Color -> Sound -> Master', img: 'https://images.unsplash.com/photo-1652992252915-f9b6592a61a3?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', video: '/videos/Product-Advertisement-edit.mp4', aspect: '9/16' },
-  { title: 'Anime Edit', category: 'Video Editing', software: ['Premiere Pro', 'After Effects'], desc: 'Beat-synced anime edit with stylized effects and cinematic color.', role: 'Editor', client: 'Community', duration: '1 week', workflow: 'Selects -> Beat Sync -> FX -> Color -> Master', img: 'https://images.unsplash.com/photo-1637140945341-f28ada987326?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '16/9', video: '/videos/Anime-Edit.mp4' },
-  { title: 'Reel Edits', category: 'Video Editing', software: ['Premiere Pro', 'After Effects', 'CapCut'], desc: 'Fast-paced, hook-driven vertical edits engineered for Reels, Shorts and TikTok virality.', role: 'Editor', client: 'Creators / Brands', duration: 'Ongoing', workflow: 'Hook -> Cut -> Sound -> Captions -> Master', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0',aspect: '9/16', videos: ['/videos/trend-reel.mp4', '/videos/Great-Wall-Of-China-Edit.mp4'] },
-  
+const PROJECTS = [ 
+
+{ title: 'Cinematic Travel Edit', category: 'Video Editing', software: ['Premiere Pro', 'After Effects', 'Photoshop'], desc: 'A soul-stirring travel edit crafted in the Himalayas with cinematic pacing and grade.', role: 'Editor / Colorist', client: 'Personal', duration: '3 weeks', workflow: 'Ingest -> Assembly -> Rough Cut -> Sound Design -> Color -> Delivery', img: 'https://images.unsplash.com/photo-1627637819794-fba32f82be16?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '9/16', video: '/videos/cinematic-travel-edit.mp4' }, 
+{ title: 'Gaming Montage', category: 'Video Editing', software: ['After Effects', 'Premiere Pro'], desc: 'High-energy gaming montage with kinetic transitions and glitch effects.', role: 'Editor', client: 'Esports Team', duration: '2 weeks', workflow: 'Concept -> Sync -> FX -> Grade -> Sound -> Master', img: 'https://images.unsplash.com/photo-1601315488950-3b5047998b38?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', video: '/videos/montage-last-final-3.mp4', aspect: '16/9' }, 
+{ title: 'Cinematic Intro Edit', category: 'Video Editing', software: ['After Effects', 'Premiere Pro'], desc: 'Signature intro sequence with kinetic type, seamless transitions and sound design.', role: 'Editor', client: 'Creator', duration: '1 week', workflow: 'Style Frames -> Edit -> Sound -> Master', img: 'https://images.unsplash.com/photo-1678986718987-76f0b9357e0f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '16/9', video: '/videos/Cinematic-Intro-Edit.mp4' }, 
+{ title: 'Product Advertisement', category: 'Video Editing', software: ['Premiere Pro', 'After Effects'], desc: 'Cinematic product spot with studio-grade color, macro detail and punchy sound.', role: 'Editor', client: 'D2C Brand', duration: '3 weeks', workflow: 'Assembly -> Edit -> Color -> Sound -> Master', img: 'https://images.unsplash.com/photo-1652992252915-f9b6592a61a3?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', video: '/videos/Product-Advertisement-edit.mp4', aspect: '9/16' }, 
+{ title: 'Anime Edit', category: 'Video Editing', software: ['Premiere Pro', 'After Effects'], desc: 'Beat-synced anime edit with stylized effects and cinematic color.', role: 'Editor', client: 'Community', duration: '1 week', workflow: 'Selects -> Beat Sync -> FX -> Color -> Master', img: 'https://images.unsplash.com/photo-1637140945341-f28ada987326?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '16/9', video: '/videos/Anime-Edit.mp4' }, 
+{ title: 'Reel Edits', category: 'Video Editing', software: ['Premiere Pro', 'After Effects', 'CapCut'], desc: 'Fast-paced, hook-driven vertical edits engineered for Reels, Shorts and TikTok virality.', role: 'Editor', client: 'Creators / Brands', duration: 'Ongoing', workflow: 'Hook -> Cut -> Sound -> Captions -> Master', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0',aspect: '9/16', videos: ['/videos/trend-reel.mp4', '/videos/Great-Wall-Of-China-Edit.mp4'] }, 
+
 ]
 
 const GALLERY = []
@@ -271,10 +272,10 @@ const BehanceIcon = ({ className = '' }) => (
 
 function SocialIcons() {
   const list = [
-    { Icon: Linkedin, href: 'https://www.linkedin.com/feed/', label: 'LinkedIn' },
-    { Icon: Instagram, href: 'https://www.instagram.com/ayushh.217?igsh=MW54cTZ0djQyYXhiNA%3D%3D&utm_source=qr', label: 'Instagram' },
-    { Icon: BehanceIcon, href: '', label: 'Behance' },
-    { Icon: Mail, href: 'mailto:ayushbijalwan217@gmail.com', label: 'Email' },
+    { Icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { Icon: Instagram, href: '#', label: 'Instagram' },
+    { Icon: BehanceIcon, href: '#', label: 'Behance' },
+    { Icon: Mail, href: '#contact', label: 'Email' },
   ]
   return (
     <div className="flex flex-row gap-3">
@@ -366,17 +367,9 @@ function Hero() {
             <Button data-hover onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="rounded-full bg-white text-black hover:bg-[#00D9FF] px-6 h-12 font-medium group">
               View Portfolio <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
-           <Button
-             asChild
-             data-hover
-             variant="outline"
-             className="rounded-full border-white/20 hover:border-[#00D9FF] hover:text-[#00D9FF] hover:bg-transparent px-6 h-12 bg-transparent"
-            >
-             <a href="/Ayush_Bijalwan_Resume.pdf" download>
-              <Download className="w-4 h-4 mr-2" />
-              Download Resume
-            </a>
-          </Button>
+            <Button data-hover variant="outline" className="rounded-full border-white/20 hover:border-[#00D9FF] hover:text-[#00D9FF] hover:bg-transparent px-6 h-12 bg-transparent">
+              <Download className="w-4 h-4 mr-2" /> Download Resume
+            </Button>
             <Button data-hover variant="ghost" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="rounded-full text-white/80 hover:text-white hover:bg-white/5 px-6 h-12">
               Contact Me
             </Button>
@@ -394,7 +387,10 @@ function Hero() {
               <img src="/profile.jpeg" alt="Ayush Bijalwan" className="w-full h-full object-cover object-center" />
               <div className="absolute inset-0 ring-1 ring-white/10 rounded-full z-20 pointer-events-none" />
             </div>
-            
+            <motion.div animate={{ rotate: 360 }} transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+              className="absolute -top-3 -right-3 w-20 h-20 rounded-full border border-dashed border-[#00D9FF]/40 flex items-center justify-center">
+              <Sparkles className="w-5 h-5 text-[#00D9FF]" />
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
@@ -527,53 +523,19 @@ function Services() {
 
 function ProjectCard({ p, onOpen, idx }) {
   const ref = useRef(null)
-  const videoRef = useRef(null)
-  const timeoutRef = useRef(null)
   const [mouse, setMouse] = useState({ x: 0, y: 0 })
   const onMove = (e) => {
     const r = ref.current.getBoundingClientRect()
     setMouse({ x: (e.clientX - r.left - r.width / 2) / 20, y: (e.clientY - r.top - r.height / 2) / 20 })
   }
   const reset = () => setMouse({ x: 0, y: 0 })
-  const handleMouseEnter = () => {
-  if (!videoRef.current) return
-
-  videoRef.current.currentTime = 0
-  videoRef.current.play()
-
-  timeoutRef.current = setTimeout(() => {
-    if (videoRef.current) {
-      videoRef.current.pause()
-    }
-  }, 8000)
-}
-
-const handleMouseLeave = () => {
-  reset()
-
-  if (timeoutRef.current) {
-    clearTimeout(timeoutRef.current)
-  }
-
-  if (videoRef.current) {
-    videoRef.current.pause()
-    videoRef.current.currentTime = 0
-  }
-}
   return (
     <TextReveal delay={idx * 0.04}>
-      <motion.div ref={ref} onMouseMove={onMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={() => onOpen(p)} data-hover
+      <motion.div ref={ref} onMouseMove={onMove} onMouseLeave={reset} onClick={() => onOpen(p)} data-hover
         style={{ transform: `perspective(1000px) rotateY(${mouse.x}deg) rotateX(${-mouse.y}deg)` }}
         className="group relative rounded-3xl overflow-hidden cursor-pointer glass transition-transform duration-300">
         <div className="relative aspect-[4/3] overflow-hidden">
-        <video
-          ref={videoRef}
-          src={p.videos?.[0] || p.video}
-          muted
-          playsInline
-          preload="metadata"
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-/>
+          <img src={p.img} alt={p.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <motion.div whileHover={{ scale: 1.1 }} className="w-16 h-16 rounded-full bg-[#00D9FF]/90 flex items-center justify-center backdrop-blur">
@@ -598,15 +560,8 @@ const handleMouseLeave = () => {
     </TextReveal>
   )
 }
+
 function ProjectModal({ project, onClose }) {
-
-  const [selectedVideo, setSelectedVideo] = useState(
-    project?.videos?.[0] || project?.video
-  )
-  useEffect(() => {
-  setSelectedVideo(project?.videos?.[0] || project?.video)
-}, [project])
-
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose() }
     window.addEventListener('keydown', onKey)
@@ -626,22 +581,14 @@ function ProjectModal({ project, onClose }) {
           </button>
         </div>
         <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-8">{project.title}</h2>
-        <div
-  className={`relative rounded-2xl overflow-hidden mb-10 ${
-    project.aspect === "9/16"
-      ? "w-full max-w-[420px] aspect-[9/16] mx-auto"
-      : "w-full aspect-video"
-  }`}
->
-          <video
-  key={selectedVideo}
-  src={selectedVideo}
-  controls
-  autoPlay
-  playsInline
-  className="w-full h-full object-contain bg-black rounded-2xl"
-/>
-     </div>
+        <div className="relative aspect-video rounded-2xl overflow-hidden mb-10 group">
+          <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <div className="w-20 h-20 rounded-full bg-[#00D9FF] flex items-center justify-center pulse-glow">
+              <Play className="w-7 h-7 text-black fill-black ml-1" />
+            </div>
+          </div>
+        </div>
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           {[{ l: 'Client', v: project.client }, { l: 'Role', v: project.role }, { l: 'Duration', v: project.duration }].map((x, i) => (
             <div key={i} className="glass rounded-2xl p-5">
@@ -666,29 +613,13 @@ function ProjectModal({ project, onClose }) {
             {project.software.map((s, i) => <span key={i} className="px-4 py-2 rounded-full glass text-sm">{s}</span>)}
           </div>
         </div>
-        {project.videos && project.videos.length > 0 && (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            
-          {(project.videos || []).map((video, i) => (
-    <div
-      key={i}
-      onClick={() => setSelectedVideo(video)}
-      className={`cursor-pointer rounded-xl overflow-hidden border-2 transition-all ${
-        selectedVideo === video
-          ? "border-[#00D9FF]"
-          : "border-transparent hover:border-white/30"
-      }`}
-    >
-      <video
-        src={video}
-        muted
-        playsInline
-        preload="metadata"
-        className="w-full aspect-[9/16] object-cover"
-      />
-    </div>
-  ))}
-</div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          {[project.img, project.img, project.img].map((im, i) => (
+            <div key={i} className="aspect-video rounded-xl overflow-hidden">
+              <img src={im} alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+            </div>
+          ))}
+        </div>
       </motion.div>
     </motion.div>
   )
@@ -1097,7 +1028,7 @@ function Footer() {
           <SocialIcons />
         </div>
         <div className="mt-10 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/40">
-          <div>© Ayush Bijalwan. All rights reserved.</div>
+          <div>(c) 2025 Ayush Bijalwan. All rights reserved.</div>
           <div>Designed with <span className="text-[#00D9FF]">passion</span> by AYUSH BIJALWAN</div>
         </div>
       </div>
@@ -1135,7 +1066,7 @@ const App = () => {
       <AnimatePresence>{loading && <LoadingScreen onDone={() => setLoading(false)} />}</AnimatePresence>
       {!loading && (
         <>
-        <CustomCursor />
+          <CustomCursor />
           <ScrollProgress />
           <Nav activeSection={activeSection} />
           <main className="relative">

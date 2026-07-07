@@ -14,7 +14,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
 import { toast } from 'sonner'
-import { useEffect, useRef } from 'react'
+
 /* ---------------- DATA ---------------- */
 const NAV = [
   { label: 'Home', id: 'home' },
@@ -515,56 +515,57 @@ function Services() {
       </div>
     </section>
   )
-}const videoRef = useRef(null);
-
-useEffect(() => {
-  const video = videoRef.current;
-  if (!video) return;
-
-  const playVideo = () => {
-    video.play().catch((err) => {
-      console.warn("Autoplay blocked:", err);
-    });
-  };
-
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        playVideo();
-      } else {
-        video.pause();
-      }
-    },
-    { threshold: 0.25 }
-  );
-
-  observer.observe(video);
-  return () => observer.disconnect();
-}, []);
+}
 
 function ProjectCard({ p, onOpen, idx }) {
   const ref = useRef(null)
+  const videoRef = useRef(null)
+  const timeoutRef = useRef(null)
   const [mouse, setMouse] = useState({ x: 0, y: 0 })
   const onMove = (e) => {
     const r = ref.current.getBoundingClientRect()
     setMouse({ x: (e.clientX - r.left - r.width / 2) / 20, y: (e.clientY - r.top - r.height / 2) / 20 })
   }
   const reset = () => setMouse({ x: 0, y: 0 })
+  const handleMouseEnter = () => {
+  if (!videoRef.current) return
+
+  videoRef.current.currentTime = 0
+  videoRef.current.play()
+
+  timeoutRef.current = setTimeout(() => {
+    if (videoRef.current) {
+      videoRef.current.pause()
+    }
+  }, 8000)
+}
+
+const handleMouseLeave = () => {
+  reset()
+
+  if (timeoutRef.current) {
+    clearTimeout(timeoutRef.current)
+  }
+
+  if (videoRef.current) {
+    videoRef.current.pause()
+    videoRef.current.currentTime = 0
+  }
+}
   return (
     <TextReveal delay={idx * 0.04}>
-      <motion.div ref={ref} onMouseMove={onMove} onMouseLeave={reset} onClick={() => onOpen(p)} data-hover
+      <motion.div ref={ref} onMouseMove={onMove} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={() => onOpen(p)} data-hover
         style={{ transform: `perspective(1000px) rotateY(${mouse.x}deg) rotateX(${-mouse.y}deg)` }}
         className="group relative rounded-3xl overflow-hidden cursor-pointer glass transition-transform duration-300">
         <div className="relative aspect-[4/3] overflow-hidden">
-         <video
-         ref={videoRef}
-         src={p.video}
-         muted
-         loop
-         playsInline
-         preload="auto"
-         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-       />
+        <video
+          ref={videoRef}
+          src={p.video}
+          muted
+          playsInline
+          preload="metadata"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+/>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <motion.div whileHover={{ scale: 1.1 }} className="w-16 h-16 rounded-full bg-[#00D9FF]/90 flex items-center justify-center backdrop-blur">

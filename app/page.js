@@ -36,12 +36,12 @@ const SKILLS = [
 const SERVICES = []
 
 const PROJECTS = [
-  { title: 'Cinematic Travel Edit', category: 'Video Editing', software: ['Premiere Pro', 'After Effects', 'Photoshop'], desc: 'A soul-stirring travel edit crafted in the Himalayas with cinematic pacing and grade.', role: 'Editor / Colorist', client: 'Personal', duration: '3 weeks', workflow: 'Ingest -> Assembly -> Rough Cut -> Sound Design -> Color -> Delivery', img: 'https://images.unsplash.com/photo-1627637819794-fba32f82be16?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', video: '/videos/cinematic-travel-edit.mp4', aspect: '9/16' },
+  { title: 'Cinematic Travel Edit', category: 'Video Editing', software: ['Premiere Pro', 'After Effects', 'Photoshop'], desc: 'A soul-stirring travel edit crafted in the Himalayas with cinematic pacing and grade.', role: 'Editor / Colorist', client: 'Personal', duration: '3 weeks', workflow: 'Ingest -> Assembly -> Rough Cut -> Sound Design -> Color -> Delivery', img: 'https://images.unsplash.com/photo-1627637819794-fba32f82be16?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '9/16', video: '/videos/cinematic-travel-edit.mp4' },
   { title: 'Gaming Montage', category: 'Video Editing', software: ['After Effects', 'Premiere Pro'], desc: 'High-energy gaming montage with kinetic transitions and glitch effects.', role: 'Editor', client: 'Esports Team', duration: '2 weeks', workflow: 'Concept -> Sync -> FX -> Grade -> Sound -> Master', img: 'https://images.unsplash.com/photo-1601315488950-3b5047998b38?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', video: '/videos/montage-last-final-3.mp4', aspect: '16/9' },
-  { title: 'Cinematic Intro Edit', category: 'Video Editing', software: ['After Effects', 'Premiere Pro'], desc: 'Signature intro sequence with kinetic type, seamless transitions and sound design.', role: 'Editor', client: 'Creator', duration: '1 week', workflow: 'Style Frames -> Edit -> Sound -> Master', img: 'https://images.unsplash.com/photo-1678986718987-76f0b9357e0f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0' },
+  { title: 'Cinematic Intro Edit', category: 'Video Editing', software: ['After Effects', 'Premiere Pro'], desc: 'Signature intro sequence with kinetic type, seamless transitions and sound design.', role: 'Editor', client: 'Creator', duration: '1 week', workflow: 'Style Frames -> Edit -> Sound -> Master', img: 'https://images.unsplash.com/photo-1678986718987-76f0b9357e0f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '16/9', video: '/videos/Cinematic-Intro-Edit.mp4' },
   { title: 'Product Advertisement', category: 'Video Editing', software: ['Premiere Pro', 'After Effects'], desc: 'Cinematic product spot with studio-grade color, macro detail and punchy sound.', role: 'Editor', client: 'D2C Brand', duration: '3 weeks', workflow: 'Assembly -> Edit -> Color -> Sound -> Master', img: 'https://images.unsplash.com/photo-1652992252915-f9b6592a61a3?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', video: '/videos/Product-Advertisement-edit.mp4', aspect: '9/16' },
-  { title: 'Anime Edit', category: 'Video Editing', software: ['Premiere Pro', 'After Effects'], desc: 'Beat-synced anime edit with stylized effects and cinematic color.', role: 'Editor', client: 'Community', duration: '1 week', workflow: 'Selects -> Beat Sync -> FX -> Color -> Master', img: 'https://images.unsplash.com/photo-1637140945341-f28ada987326?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0' },
-  { title: 'Reel Edits', category: 'Video Editing', software: ['Premiere Pro', 'After Effects', 'CapCut'], desc: 'Fast-paced, hook-driven vertical edits engineered for Reels, Shorts and TikTok virality.', role: 'Editor', client: 'Creators / Brands', duration: 'Ongoing', workflow: 'Hook -> Cut -> Sound -> Captions -> Master', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', videos: ['/videos/trend-reel.mp4', '/videos/Great-Wall-Of-China-Edit.mp4'], aspect: '9/16' },
+  { title: 'Anime Edit', category: 'Video Editing', software: ['Premiere Pro', 'After Effects'], desc: 'Beat-synced anime edit with stylized effects and cinematic color.', role: 'Editor', client: 'Community', duration: '1 week', workflow: 'Selects -> Beat Sync -> FX -> Color -> Master', img: 'https://images.unsplash.com/photo-1637140945341-f28ada987326?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0', aspect: '16/9', video: '/videos/Anime-Edit.mp4' },
+  { title: 'Reel Edits', category: 'Video Editing', software: ['Premiere Pro', 'After Effects', 'CapCut'], desc: 'Fast-paced, hook-driven vertical edits engineered for Reels, Shorts and TikTok virality.', role: 'Editor', client: 'Creators / Brands', duration: 'Ongoing', workflow: 'Hook -> Cut -> Sound -> Captions -> Master', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0',aspect: '9/16', videos: ['/videos/trend-reel.mp4', '/videos/Great-Wall-Of-China-Edit.mp4'] },
   
 ]
 
@@ -273,7 +273,7 @@ function SocialIcons() {
   const list = [
     { Icon: Linkedin, href: 'https://www.linkedin.com/feed/', label: 'LinkedIn' },
     { Icon: Instagram, href: 'https://www.instagram.com/ayushh.217?igsh=MW54cTZ0djQyYXhiNA%3D%3D&utm_source=qr', label: 'Instagram' },
-    { Icon: BehanceIcon, href: 'https://www.behance.net/ayushbijalwan4', label: 'Behance' },
+    { Icon: BehanceIcon, href: '', label: 'Behance' },
     { Icon: Mail, href: 'mailto:ayushbijalwan217@gmail.com', label: 'Email' },
   ]
   return (
@@ -366,9 +366,17 @@ function Hero() {
             <Button data-hover onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="rounded-full bg-white text-black hover:bg-[#00D9FF] px-6 h-12 font-medium group">
               View Portfolio <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button data-hover variant="outline" className="rounded-full border-white/20 hover:border-[#00D9FF] hover:text-[#00D9FF] hover:bg-transparent px-6 h-12 bg-transparent">
-              <Download className="w-4 h-4 mr-2" /> Download Resume
-            </Button>
+           <Button
+             asChild
+             data-hover
+             variant="outline"
+             className="rounded-full border-white/20 hover:border-[#00D9FF] hover:text-[#00D9FF] hover:bg-transparent px-6 h-12 bg-transparent"
+            >
+             <a href="/Ayush_Bijalwan_Resume.pdf" download>
+              <Download className="w-4 h-4 mr-2" />
+              Download Resume
+            </a>
+          </Button>
             <Button data-hover variant="ghost" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="rounded-full text-white/80 hover:text-white hover:bg-white/5 px-6 h-12">
               Contact Me
             </Button>
@@ -590,10 +598,15 @@ const handleMouseLeave = () => {
     </TextReveal>
   )
 }
-const [selectedVideo, setSelectedVideo] = useState(
-  project.videos?.[0] || project.video
-)
 function ProjectModal({ project, onClose }) {
+
+  const [selectedVideo, setSelectedVideo] = useState(
+    project?.videos?.[0] || project?.video
+  )
+  useEffect(() => {
+  setSelectedVideo(project?.videos?.[0] || project?.video)
+}, [project])
+
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose() }
     window.addEventListener('keydown', onKey)
@@ -653,8 +666,10 @@ function ProjectModal({ project, onClose }) {
             {project.software.map((s, i) => <span key={i} className="px-4 py-2 rounded-full glass text-sm">{s}</span>)}
           </div>
         </div>
+        {project.videos && project.videos.length > 0 && (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-  {(project.videos || []).map((video, i) => (
+            
+          {(project.videos || []).map((video, i) => (
     <div
       key={i}
       onClick={() => setSelectedVideo(video)}
@@ -1082,7 +1097,7 @@ function Footer() {
           <SocialIcons />
         </div>
         <div className="mt-10 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/40">
-          <div>(c) 2025 Ayush Bijalwan. All rights reserved.</div>
+          <div>© Ayush Bijalwan. All rights reserved.</div>
           <div>Designed with <span className="text-[#00D9FF]">passion</span> by AYUSH BIJALWAN</div>
         </div>
       </div>
